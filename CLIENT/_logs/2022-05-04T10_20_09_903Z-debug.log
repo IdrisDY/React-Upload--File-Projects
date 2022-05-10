@@ -1,0 +1,76 @@
+0 verbose cli [
+0 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+0 verbose cli   'C:\\Users\\A. A. ADEKUNLE\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+0 verbose cli   'i',
+0 verbose cli   'react-facebook-login'
+0 verbose cli ]
+1 info using npm@7.21.1
+2 info using node@v14.17.1
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 16ms
+5 timing config:load:file:C:\Users\A. A. ADEKUNLE\AppData\Roaming\npm\node_modules\npm\npmrc Completed in 29ms
+6 timing config:load:builtin Completed in 30ms
+7 timing config:load:cli Completed in 7ms
+8 timing config:load:env Completed in 4ms
+9 timing config:load:file:C:\Users\A. A. ADEKUNLE\Desktop\API REACT\apireact\.npmrc Completed in 0ms
+10 timing config:load:project Completed in 3ms
+11 timing config:load:file:C:\Users\A. A. ADEKUNLE\.npmrc Completed in 2ms
+12 timing config:load:user Completed in 2ms
+13 timing config:load:file:C:\Users\A. A. ADEKUNLE\AppData\Roaming\npm\etc\npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 2ms
+16 timing config:load:credentials Completed in 25ms
+17 timing config:load:setEnvs Completed in 4ms
+18 timing config:load Completed in 97ms
+19 timing npm:load:configload Completed in 98ms
+20 timing npm:load:setTitle Completed in 0ms
+21 timing npm:load:setupLog Completed in 2ms
+22 timing config:load:flatten Completed in 18ms
+23 timing npm:load:cleanupLog Completed in 13ms
+24 timing npm:load:configScope Completed in 0ms
+25 timing npm:load:projectScope Completed in 22ms
+26 timing npm:load Completed in 168ms
+27 timing arborist:ctor Completed in 13ms
+28 timing idealTree:init Completed in 5151ms
+29 timing idealTree:userRequests Completed in 20ms
+30 silly idealTree buildDeps
+31 silly fetch manifest react-facebook-login@*
+32 timing arborist:ctor Completed in 1ms
+33 http fetch GET 200 https://registry.npmjs.org/react-facebook-login 27806ms (cache miss)
+34 silly fetch manifest react@^18.0.0
+35 http fetch GET 200 https://registry.npmjs.org/react 4901ms (cache updated)
+36 silly fetch manifest react@^16.0.0
+37 timing idealTree Completed in 38223ms
+38 timing command:install Completed in 39000ms
+39 verbose stack Error: unable to resolve dependency tree
+39 verbose stack     at Arborist.[failPeerConflict] (C:\Users\A. A. ADEKUNLE\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1274:25)
+39 verbose stack     at Arborist.[loadPeerSet] (C:\Users\A. A. ADEKUNLE\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1241:34)
+39 verbose stack     at async Arborist.[buildDepStep] (C:\Users\A. A. ADEKUNLE\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:877:11)
+39 verbose stack     at async Arborist.buildIdealTree (C:\Users\A. A. ADEKUNLE\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:206:7)
+39 verbose stack     at async Promise.all (index 1)
+39 verbose stack     at async Arborist.reify (C:\Users\A. A. ADEKUNLE\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:147:5)
+39 verbose stack     at async Install.install (C:\Users\A. A. ADEKUNLE\AppData\Roaming\npm\node_modules\npm\lib\install.js:150:5)
+40 verbose cwd C:\Users\A. A. ADEKUNLE\Desktop\API REACT\apireact
+41 verbose Windows_NT 10.0.18362
+42 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\A. A. ADEKUNLE\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "i" "react-facebook-login"
+43 verbose node v14.17.1
+44 verbose npm  v7.21.1
+45 error code ERESOLVE
+46 error ERESOLVE unable to resolve dependency tree
+47 error
+48 error While resolving: [1mapireact[22m@[1m0.1.0[22m
+48 error Found: [1mreact[22m@[1m18.1.0[22m[2m[22m
+48 error [2mnode_modules/react[22m
+48 error   [1mreact[22m@"[1m^18.0.0[22m" from the root project
+48 error
+48 error Could not resolve dependency:
+48 error [35mpeer[39m [1mreact[22m@"[1m^16.0.0[22m" from [1mreact-facebook-login[22m@[1m4.1.1[22m[2m[22m
+48 error [2mnode_modules/react-facebook-login[22m
+48 error   [1mreact-facebook-login[22m@"[1m*[22m" from the root project
+48 error
+48 error Fix the upstream dependency conflict, or retry
+48 error this command with --force, or --legacy-peer-deps
+48 error to accept an incorrect (and potentially broken) dependency resolution.
+48 error
+48 error See C:\Users\A. A. ADEKUNLE\Desktop\API REACT\apireact\eresolve-report.txt for a full report.
+49 verbose exit 1
