@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+/* A function that takes a parameter called msg. */
 const Message = ({msg}) => {
   return (
     <div>Message
@@ -12,6 +13,7 @@ const Message = ({msg}) => {
   )
 }
 
+/* A validation of the props. */
 Message.propTypes = {
    msg:PropTypes.string.isRequired
 }
