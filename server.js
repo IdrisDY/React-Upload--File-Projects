@@ -9,7 +9,12 @@ app.use(fileUpload())
 
 
 //Upload Endpoint
-/* A function that is listening to the upload endpoint. */
+/* A function that is listening to the upload endpoint.
+the post takes two parameters the endpoint in string and a function with two parameters req and res
+req is the request parameter and if it null will return status msg
+Note res is in json format
+the upload is the endpoint, the req argument
+ */
 app.post("/upload",(req,res)=>{
    if(req.files === null){
       return res.status(400).json({ msg:'No file uploaded'})

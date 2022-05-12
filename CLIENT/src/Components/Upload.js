@@ -27,6 +27,7 @@ function Upload(){
  */
    const  onsubmit = async e => {
       e.preventDefault();
+      /* Form data is used to send html forms with or without files*/
       const formData = new FormData();
       formData.append('file', file)
 /* A try catch block, and it is used to catch errors. */
